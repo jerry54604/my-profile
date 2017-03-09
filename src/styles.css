@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+  Normalize css for cross browser rendering consistency
+*/
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+  Styling for navigation link
+*/
+.NavLink {
+	position: relative;
+	width: 150px;
+	height: 30px;
+}
+.NavLink > a {
+  text-decoration: none;
+  z-index:1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  line-height: 200%;
+  color: #fff;
+}
+
+.NavLink > a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border: solid 1px rgba(99, 182, 73, 0.74);
+  /*border-radius: 20px;*/
+  background-image: radial-gradient( circle farthest-corner, rgba(99, 182, 73, 0) 25%, rgba(99, 182, 73, 0.62) 100%);
+  transition: all 0.125s;
+}
+
+.NavLink > a:hover:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.25s;
+}
