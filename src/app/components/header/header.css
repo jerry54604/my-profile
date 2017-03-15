@@ -1,0 +1,33 @@
+.my-navbar {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  position: relative;
+  min-height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.my-navbar::after {
+  clear: both;
+}
+
+.my-navbar::before {
+  display: table;
+  content: " ";
+}
+
+.my-navbar > .container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-navbar a.btn:hover {
+  box-shadow: 0 3px 5px rgba(0,0,0,.125);
+}
+
+.my-navbar a.btn:active {
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+.my-navbar-center {
+  flex: 1 1 auto
+}

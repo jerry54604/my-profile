@@ -7,8 +7,10 @@ import { RouterModule }   from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component'
+import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
+
+import { StickDirective } from './directives/stick-directive';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -23,7 +25,8 @@ import { AppRoutingModule }     from './app-routing.module';
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    StickDirective
   ],
   providers: [],
   bootstrap: [AppComponent]
