@@ -8,4 +8,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.my-title > h1 {
+  font-size: 350%;
+}
+
+.my-title > ul {
+  list-style: none;
+}
+
+.my-title > ul > li {
+  display: inline-block;
+}
+
+.my-title > ul > li:nth-child(n+2):before {
+  content: '\2022';
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 150%;
+  line-height: 0.5em;
+  vertical-align: middle;
+  margin: 0px 0.25em;
 }
