@@ -1,0 +1,11 @@
+.my-title {
+  height: 500px;
+  background-image: url('/assets/imges/auckland.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

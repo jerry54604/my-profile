@@ -18,7 +18,7 @@ export class StickDirective {
   }
 
   constructor(private _element: ElementRef) {
-    console.log('TrackScrollDirective ' + ElementRef);
+    
   }
 
   @HostListener('window:scroll', ['$event'])
