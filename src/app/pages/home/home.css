@@ -1,15 +1,49 @@
+.section-divider-line {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(234,239,243,0) 0%, rgba(234,239,243,1) 50%, rgba(234,239,243,0) 100%);
+    margin: 20px 0;
+}
+
 .my-title {
   height: 500px;
-  background-image: url('/assets/images/auckland.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: rgba(255, 255, 255, 1)
+  color: rgb(255, 179, 0);
+  z-index: 2;
+}
+
+#shout {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner {
+  background-image: url('/assets/images/auckland.jpg');
+  background-attachment: fixed;
+  background-position-x: 50px;
+  background-position-y: -250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+
+.banner::after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: -1px;
+  top: 0;
+  height: 200%;
+  transform: skewY(23.12deg) translateY(24%);
+  transform-origin: top;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 .my-title > h1 {
@@ -17,11 +51,13 @@
 }
 
 .my-title > h1, .my-title > h2 {
-  text-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 3px black;
 }
 
 .my-title > ul {
   list-style: none;
+  font-weight: bold;
+  padding-left: 0;
 }
 
 .my-title > ul > li {
@@ -30,7 +66,7 @@
 
 .my-title > ul > li:nth-child(n+2):before {
   content: '\2022';
-  color: rgba(255, 255, 255, 0.75);
+  color: #555;
   font-size: 150%;
   line-height: 0.5em;
   vertical-align: middle;
@@ -43,11 +79,7 @@
 
 
 .stage {
-  overflow: hidden;/*
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -175px 0 0 -250px;*/
+  overflow: hidden;
   width: 500px;
   height: 350px;
 }
@@ -178,7 +210,7 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  background-color: #cf7473;
+  background-color: #d9edf7;
   transform: translate(0px, 10px);
   transform-origin: center bottom;
   animation-name: moveRight;
@@ -189,11 +221,6 @@
 }
 .stage li::after {
   display: block;
-  /*width: 25px;
-  height: 7px;
-  background-color: #c34e4d;
-  top: 5px;
-  left: 5px;*/
   content: '</>' !important;
   font-weight: bold;
   width: 100%;

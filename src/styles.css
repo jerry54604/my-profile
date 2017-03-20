@@ -9,6 +9,17 @@ body {
 }
 
 /*
+	Universal styling
+*/
+body {
+	background-color: #f3fdfd;
+}
+
+.container-fluid .container {
+	background-color: #fff;
+}
+
+/*
   Styling for navigation link
 */
 .NavLink {
