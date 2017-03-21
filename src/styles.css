@@ -20,6 +20,65 @@ body {
 }
 
 /*
+	Loading icon
+*/
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: rotate(-45deg) translateX(-50%) translateY(-50%) scale(2, 2);
+          transform: rotate(-45deg) translateX(-50%) translateY(-50%) scale(2, 2);
+  margin-left: -45px;
+  margin-top: -45px;
+}
+.loader:before, .loader:after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 0 100% 0 0;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.loader:before {
+  box-shadow: 0 -2px 0 0 #0cf;
+  -webkit-animation: ice 1s infinite linear;
+  animation: ice 1s infinite linear;
+}
+.loader:after {
+  box-shadow: 2px 0 0 0 #f00;
+  -webkit-animation: fire 1s infinite linear;
+  animation: fire 1s infinite linear;
+}
+
+@-webkit-keyframes fire {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fire {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes ice {
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes ice {
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+
+/*
   Styling for navigation link
 */
 .NavLink {
