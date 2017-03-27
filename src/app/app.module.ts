@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RunningClockComponent } from './components/running-clock/running-clock.component';
 import { FactoryAnimationComponent } from './components/factory-animation/factory-animation.component';
+import { RainbowPulseComponent } from './components/rainbow-pulse/rainbow-pulse.component';
 import { HomeComponent } from './pages/home/home.component';
 
 import { StickDirective } from './directives/stick-directive';
@@ -29,6 +30,7 @@ import { AppRoutingModule }     from './app-routing.module';
     HeaderComponent,
     RunningClockComponent,
     FactoryAnimationComponent,
+    RainbowPulseComponent,
     HomeComponent,
     StickDirective
   ],
