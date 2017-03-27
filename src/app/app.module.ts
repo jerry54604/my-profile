@@ -8,7 +8,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { RunningClockComponent } from './components/running-clock/running-clock.component'
+import { RunningClockComponent } from './components/running-clock/running-clock.component';
+import { FactoryAnimationComponent } from './components/factory-animation/factory-animation.component';
 import { HomeComponent } from './pages/home/home.component';
 
 import { StickDirective } from './directives/stick-directive';
@@ -27,6 +28,7 @@ import { AppRoutingModule }     from './app-routing.module';
     AppComponent,
     HeaderComponent,
     RunningClockComponent,
+    FactoryAnimationComponent,
     HomeComponent,
     StickDirective
   ],
